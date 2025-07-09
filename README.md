@@ -1,2 +1,8 @@
 # Pneumonia-detection
- Convolutional Neural Network
+Convolutional Neural Network
+
+## Methodology
+
+## Data
+
+## Results
