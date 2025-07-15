@@ -82,7 +82,7 @@ Key results:
 - Classification report gives precision and recall for both classes — useful in healthcare, where false negatives (missing pneumonia) can be critical.
 
 
-## ⚙️ Requirements
+## Requirements
 
 - Python 3.x
 - TensorFlow / Keras
