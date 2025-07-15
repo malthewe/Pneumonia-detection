@@ -6,14 +6,14 @@ The goal of this project is to build a binary image classifier that can detect p
 
 Key steps in the methodology:
 
-a) Transfer Learning
+### a) Transfer Learning
 Instead of training a CNN from scratch (which requires huge data), I reuse VGG16, a popular convolutional neural network pre-trained on ImageNet.
 
 I remove its top fully connected layers (include_top=False).
 
 I freeze its convolutional layers initially so they act as a fixed feature extractor for X-ray images.
 
-b) Custom Classification Head
+### b) Custom Classification Head
 After the VGG16 base, I add:
 
 Flatten layer to turn feature maps into a vector.
@@ -24,21 +24,21 @@ Dropout layer to reduce overfitting.
 
 Dense output layer with sigmoid activation to output probability (0: healthy, 1: pneumonia).
 
-c) Data Augmentation
+### c) Data Augmentation
 To prevent overfitting on a small dataset, I artificially generate variations of images:
 
 Random rotations, flips, zooms, shifts.
 
 This helps the model generalize better to unseen X-rays.
 
-d) Training Setup
+### d) Training Setup
 Loss function: Binary cross-entropy, standard for binary classification.
 
 Optimizer: RMSprop with a low learning rate (1e-4) to carefully adjust pre-trained weights.
 
 Early stopping: Monitors validation loss, stops training if performance stops improving.
 
-e) Evaluation
+### e) Evaluation
 After training, the model is evaluated on an unseen test dataset.
 
 I analyze:
@@ -80,3 +80,15 @@ Key results:
 - Confusion matrix shows how many healthy cases are misclassified as pneumonia and vice versa.
 
 - Classification report gives precision and recall for both classes — useful in healthcare, where false negatives (missing pneumonia) can be critical.
+
+
+## ⚙️ Requirements
+
+- Python 3.x
+- TensorFlow / Keras
+- NumPy
+- Matplotlib
+- Scikit-learn
+
+
+
