@@ -52,7 +52,8 @@ Classification report (precision, recall, F1-score)
 
 ## Data
 
-## 📦 Seneste release
+Data can be downloaded here:  
+https://github.com/malthewe/Pneumonia-detection/releases/tag/v1.0.0 
 
 The dataset consists of chest X-ray images categorized into two classes:
 
