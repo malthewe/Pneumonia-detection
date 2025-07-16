@@ -54,10 +54,6 @@ Classification report (precision, recall, F1-score)
 
 ## 📦 Seneste release
 
-Download v1.0.0
-
-!GitHub release (latest by date)
-
 The dataset consists of chest X-ray images categorized into two classes:
 
 PNEUMONIA: X-rays showing signs of pneumonia.
