@@ -52,7 +52,11 @@ Classification report (precision, recall, F1-score)
 
 ## Data
 
+## 📦 Seneste release
+
 Download v1.0.0
+
+!GitHub release (latest by date)
 
 The dataset consists of chest X-ray images categorized into two classes:
 
