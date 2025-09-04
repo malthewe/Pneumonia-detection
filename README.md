@@ -79,7 +79,7 @@ Key results:
 
 - Loss plots show that training loss decreases while validation loss stays relatively flat — meaning overfitting is reduced but may still exist if the gap widens too much.
 
-- Test accuracy (in your runs) was ~78% — this shows the model is significantly better than random guessing (50% for binary), but there’s room to improve with more data and fine-tuning.
+- Test accuracy was ~78% — this shows the model is significantly better than random guessing (50% for binary), but there’s room to improve with more data and fine-tuning.
 
 - Confusion matrix shows how many healthy cases are misclassified as pneumonia and vice versa.
 
